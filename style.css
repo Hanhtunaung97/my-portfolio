@@ -286,11 +286,12 @@ nav ul li a:hover::after {
   color: var(--main-text-color);
   transition: background-color 0.5s;
   user-select: none;
+  transition: background-color 0.5s;
 }
-.btn.btn-2:hover {
+.btn.btn-2:active {
   background-color: transparent;
   color: var(--primary-color);
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 .contact-right form {
   width: 100%;
@@ -313,6 +314,11 @@ form .btn-2 {
   margin-top: 20px;
   border-radius: 7px;
   cursor: pointer;
+  transition: background-color 0.5s;
+}
+form .btn-2:active{
+  background-color: transparent;
+  color: var(--primary-color);
 }
 .copy-right {
   width: 100%;
@@ -325,7 +331,7 @@ form .btn-2 {
   text-align: center;
 }
 .copy-right i {
-  color: var(--primary-color);
+  color: #eac100;
 }
 /* --------CSS Media Query------- */
 nav .fas {
