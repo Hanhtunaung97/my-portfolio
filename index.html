@@ -19,12 +19,14 @@
         <div class="container">
           <nav>
             <img src="./images/logo.png" alt="" />
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">Contact</a></li>
+            <ul id="sideMenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Portfolio</a></li>
+              <li><a href="#portfolio">Contact</a></li>
+              <i class="fas fa-times" onclick="closeMenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
           </nav>
           <div class="text-header">
             <p>Front-End Web Developer</p>
@@ -128,23 +130,81 @@
       <!-- ------Portfolio------- -->
       <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="./images/work-1.png" alt="">
-                </div>
-                <div class="work">
-                    <img src="./images/work-2.png" alt="">
-                </div>
-                <div class="work">
-                    <img src="./images/work-3.png" alt="">
-                </div>
-
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="./images/work-1.png" alt="" />
+              <div class="layer">
+                <h3>Invoice App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquam veniam illum molestias, numquam ab, nihil laudantium
+                  consectetur assumenda repellendus cum inventore doloremque
+                  totam fuga optio consequuntur placeat fugit! Voluptates, unde.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
             </div>
-
-
+            <div class="work">
+              <img src="./images/work-2.png" alt="" />
+              <div class="layer">
+                <h3>Invoice App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquam veniam illum molestias, numquam ab, nihil laudantium
+                  consectetur assumenda repellendus cum inventore doloremque
+                  totam fuga optio consequuntur placeat fugit! Voluptates, unde.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./images/work-3.png" alt="" />
+              <div class="layer">
+                <h3>Invoice App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquam veniam illum molestias, numquam ab, nihil laudantium
+                  consectetur assumenda repellendus cum inventore doloremque
+                  totam fuga optio consequuntur placeat fugit! Voluptates, unde.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See More</a>
         </div>
-
+      </div>
+      <!---------Contact------ -->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1>Contact Me</h1>
+              <p><i class="fa-solid fa-envelope"></i> littlehanhtunaung97@gmail.com</p>
+              <p><i class="fa-solid fa-mobile-screen-button"></i> +959798800986</p>
+              <div class="social-apps">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a href="./images/my-cv.pdf" class="btn btn-2" download="HHA-CV">Download</a>
+            </div>
+            <div class="contact-right">
+              <form action="#" name="submit-to-google-sheet">
+                <input type="text" name="Name" id="name" placeholder="Your Name">
+                <input type="email" name="Email" id="Your Email" placeholder="Your Email">
+                <textarea name="Message"  rows="5" placeholder="Your message...."></textarea>
+                <button type="submit" class="btn btn-2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <p>Copy Right &copy; made by <i class="fa-solid fa-bolt"></i> HHA</p>
       </div>
     </main>
     <script src="./app.js"></script>
