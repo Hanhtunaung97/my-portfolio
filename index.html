@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./images/bat-mask-svgrepo-com.svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,24 +13,59 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Primary Meta Tags -->
+    <title>Personal Portfolio website</title>
+    <meta name="title" content="Personal Portfolio website" />
+    <meta
+      name="description"
+      content="Build personal portfolio website only using with HTML,CSS,JavsScript.Inspired from GreatStack youtube channel."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Personal Portfolio website" />
+    <meta
+      property="og:description"
+      content="Build personal portfolio website only using with HTML,CSS,JavsScript.Inspired from GreatStack youtube channel."
+    />
+    <meta
+      property="og:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Personal Portfolio website" />
+    <meta
+      property="twitter:description"
+      content="Build personal portfolio website only using with HTML,CSS,JavsScript.Inspired from GreatStack youtube channel."
+    />
+    <meta
+      property="twitter:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
   </head>
   <body>
     <main>
       <div id="header">
         <div class="container">
           <nav>
-            <img src="./images/logo.png" alt="" />
+            <img src="./images/bat-animals-svgrepo-com (1).svg" alt="" />
             <ul id="sideMenu">
               <li><a href="#header">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#services">Portfolio</a></li>
-              <li><a href="#portfolio">Contact</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
               <i class="fas fa-times" onclick="closeMenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openMenu()"></i>
           </nav>
           <div class="text-header">
-            <p>Front-End Web Developer</p>
+            <p>Junior <span>Front-End</span> Web Developer</p>
             <h1>
               Hola,I'm <br />
               <span>Han</span> htunaung
@@ -42,15 +78,17 @@
         <div class="container">
           <div class="row">
             <div class="about-col-1">
-              <img src="./images/user.png" alt="" />
+              <img src="./images/profile.jpg" alt="" />
             </div>
             <div class="about-col-2">
-              <h1 class="sub-title">HELLO</h1>
+              <h1 class="sub-title">Profile</h1>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                neque facilis tempore. Voluptates omnis quibusdam voluptatum
-                modi nam? Non quisquam consectetur consequuntur ullam ut iusto
-                eos inventore nam? Quaerat, neque!
+                Detail-oriented and motivated Junior Front-End Developer with a
+                passion for crafting seamless user experiences and a strong
+                foundation in HTML, CSS, and JavaScript. Equipped with knowledge
+                of modern web technologies and frameworks, eager to contribute
+                to dynamic projects and grow within a collaborative team
+                environment.
               </p>
               <div class="tab-titles">
                 <p class="tab-links active-link" onclick="openTab('skills')">
@@ -66,9 +104,12 @@
                 <ul>
                   <li>
                     <span>Front-End Development</span>
-                    <br />HTML-CSS-JavaScript-REACT-NEXT.js
+                    <br />HTML-CSS-JavaScript-Bootstrap-TailwindCSS-REACT.js-NEXT.js
                   </li>
-                  <li><span>UI Design</span> <br />Designing Web&Mobile UI</li>
+                  <li>
+                    <span>UI/UX Design</span> <br />Entry level of user
+                    interface design
+                  </li>
                 </ul>
               </div>
               <!-- Experience -->
@@ -104,25 +145,30 @@
           <div class="services-list">
             <div>
               <i class="fa-solid fa-code"></i>
-              <h2>Web Development</h2>
+              <h2>Front-End Development</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est
-                officia optio neque illo quam nobis fugiat sit, deleniti dolores
-                ipsum! Odio eligendi ad, sed doloribus commodi quae accusamus
-                obcaecati.
+                Crafting seamless user experiences through visually appealing
+                interfaces,my front-end development services encompass UI
+                design, responsive web design, and the creation of interactive
+                web applications. Leveraging modern frameworks like React.js.Let
+                me bring your digital vision to life with clean, efficient
+                front-end solutions.
               </p>
-              <a href="#">Learn more</a>
+              <a href="https://github.com/Hanhtunaung97">Learn more</a>
             </div>
             <div>
               <i class="fa-solid fa-wand-magic-sparkles"></i>
               <h2>UI/UX Design</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est
-                officia optio neque illo quam nobis fugiat sit, deleniti dolores
-                ipsum! Odio eligendi ad, sed doloribus commodi quae accusamus
-                obcaecati.
+                Leveraging fundamental design principles and tools like Figma, I
+                am dedicated to honing my skills and exploring new creative
+                avenues. Let's collaborate to bring your digital projects to
+                life with fresh and compelling UI designs."
               </p>
-              <a href="#">Learn more</a>
+              <a
+                href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1270433557788292424"
+                >Learn more</a
+              >
             </div>
           </div>
         </div>
@@ -133,46 +179,61 @@
           <h1 class="sub-title">My Work</h1>
           <div class="work-list">
             <div class="work">
-              <img src="./images/work-1.png" alt="" />
+              <img src="./images/invoice-2.jpg" alt="" />
               <div class="layer">
                 <h3>Invoice App</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam veniam illum molestias, numquam ab, nihil laudantium
-                  consectetur assumenda repellendus cum inventore doloremque
-                  totam fuga optio consequuntur placeat fugit! Voluptates, unde.
+                  My app offers a user-friendly interface and robust features.
+                  Generate professional invoices, track payments, and manage
+                  client accounts seamlessly, all in one place. With
+                  customizable templates, automated reminders, and detailed
+                  reporting, My invoice app empowers you to stay organized and
+                  focused on growing your business. Say goodbye to manual
+                  invoicing hassles and hello to streamlined financial
+                  management with My powerful invoice app."
                 </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+                <a href="https://invoice-app-vanilla-js.netlify.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
               </div>
             </div>
             <div class="work">
-              <img src="./images/work-2.png" alt="" />
+              <img src="./images/online-shop.jpg" alt="" />
               <div class="layer">
-                <h3>Invoice App</h3>
+                <h3>Small Online Shop</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam veniam illum molestias, numquam ab, nihil laudantium
-                  consectetur assumenda repellendus cum inventore doloremque
-                  totam fuga optio consequuntur placeat fugit! Voluptates, unde.
+                  Elevate your online retail experience with our small online
+                  shop solution. With easy-to-use inventory management tools,
+                  secure payment gateways, and customizable storefront designs,
+                  you can create a professional and unique shopping experience
+                  tailored to your brand.Start your digital storefront journey
+                  with us and unlock the potential of e-commerce for your small
+                  business.
                 </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+                <a href="https://product-card-managment-system.netlify.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
               </div>
             </div>
             <div class="work">
-              <img src="./images/work-3.png" alt="" />
+              <img src="./images/todo-list.jpg" alt="" />
               <div class="layer">
-                <h3>Invoice App</h3>
+                <h3>Todo App</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam veniam illum molestias, numquam ab, nihil laudantium
-                  consectetur assumenda repellendus cum inventore doloremque
-                  totam fuga optio consequuntur placeat fugit! Voluptates, unde.
+                  Simplify your task management with my intuitive todo app.
+                  Designed to help you stay organized and productive, my app
+                  offers a streamlined way to create, prioritize, and track your
+                  tasks.Whether you're planning your workday, organizing
+                  personal projects, my todo app provides a flexible and
+                  user-friendly solution for all your task management needs.
                 </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+                <a href="https://todo-app-react-sample.netlify.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
               </div>
             </div>
           </div>
-          <a href="#" class="btn">See More</a>
+          <a href="https://github.com/Hanhtunaung97" class="btn">See More</a>
         </div>
       </div>
       <!---------Contact------ -->
@@ -189,10 +250,20 @@
                 <i class="fa-solid fa-mobile-screen-button"></i> +959798800986
               </p>
               <div class="social-apps">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100004888456380&mibextid=LQQJ4d"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/han-htunaung-7720a526a/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/Hanhtunaung97"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/han.clorine?igsh=NHA4Y3R1dmRvbmdu&utm_source=qr"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
               </div>
               <a href="./images/my-cv.pdf" class="btn btn-2" download="HHA-CV"
                 >Download</a
@@ -227,7 +298,10 @@
         </div>
       </div>
       <div class="copy-right">
-        <p>Copy Right &copy; made by <i class="fa-solid fa-bolt"></i> HHA</p>
+        <p>
+          Copy Right &copy; made by
+          <a href="#"><i class="fa-solid fa-bolt"></i></a> HHA
+        </p>
       </div>
     </main>
     <script src="./app.js"></script>

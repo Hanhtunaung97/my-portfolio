@@ -6,10 +6,10 @@
   box-sizing: border-box;
 }
 :root {
-  --main-bg-color: #000000;
+  --main-bg-color: #000d13;
   --main-text-color: #fafafa;
-  --primary-color: #e41749;
-  --secondary-color: #dee1ec;
+  --primary-color: #38bdf8;
+  --secondary-color: #bac4c9;
 }
 html {
   scroll-behavior: smooth;
@@ -21,7 +21,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(./images/background.png);
+  background-image: url(./images/background-2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -38,6 +38,15 @@ nav {
   left: 0;
   right: 0;
   margin: auto; */
+}
+nav img{
+  width: 5%;
+  color: var(--main-text-color);
+  transition: transform 0.5s;
+}
+nav img:hover{
+  cursor: pointer;
+  transform: rotate(45deg) scale(1.1);
 }
 nav ul li {
   display: inline-block;
@@ -73,6 +82,9 @@ nav ul li a:hover::after {
   margin-top: 20px;
 }
 .text-header h1 span {
+  color: var(--primary-color);
+}
+.text-header p span {
   color: var(--primary-color);
 }
 /* ----------about------------- */
@@ -131,7 +143,7 @@ nav ul li a:hover::after {
 }
 .tab-contents ul li span {
   font-size: 14px;
-  color: #d40c3e;
+  color: #38bdf8;
 }
 .tab-contents {
   display: none;
@@ -150,7 +162,7 @@ nav ul li a:hover::after {
   margin-top: 50px;
 }
 .services-list div {
-  background-color: #262626;
+  background-color: #001620;
   font-size: 14px;
   font-weight: 300;
   padding: 40px;
@@ -212,7 +224,7 @@ nav ul li a:hover::after {
   text-align: center;
   padding: 0 40px;
   overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), #d40c3e);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #38bdf8);
   font-size: 14px;
   transition: height 0.5s;
 }
@@ -303,7 +315,7 @@ form textarea {
   outline: none;
   padding: 15px;
   margin: 15px 0;
-  background-color: #262626;
+  background-color: #001620;
   color: var(--main-text-color);
   font-size: 16px;
   border-radius: 7px;
@@ -314,9 +326,9 @@ form .btn-2 {
   margin-top: 20px;
   border-radius: 7px;
   cursor: pointer;
-  transition: background-color 0.5s;
+  transition: background-color 1s;
 }
-form .btn-2:active{
+form .btn-2:active {
   background-color: transparent;
   color: var(--primary-color);
 }
@@ -324,7 +336,7 @@ form .btn-2:active{
   width: 100%;
   font-weight: 300px;
   font-size: 18px;
-  background-color: #262626;
+  background-color: #001620;
   color: var(--main-text-color);
   margin-top: 20px;
   padding: 15px 0;
@@ -332,6 +344,12 @@ form .btn-2:active{
 }
 .copy-right i {
   color: #eac100;
+  transition: transform 0.5s;
+}
+.copy-right a:hover i {
+  color: #e41749;
+  transform: translateY(-5px);
+  font-size: 20px;
 }
 /* --------CSS Media Query------- */
 nav .fas {
@@ -343,7 +361,9 @@ nav .fas {
     font-size: 25px;
   }
   #header {
-    background-image: url(./images/phone-background.png);
+    background-image: url(./images/background-2.jpg);
+    background-size: cover;
+    background-position: center;
   }
   .text-header {
     margin-top: 100%;
@@ -354,7 +374,7 @@ nav .fas {
   }
   nav ul {
     height: 100vh;
-    background-color: var(--primary-color);
+    background-color: var(--main-bg-color);
     position: fixed;
     top: 0;
     right: -200px;
