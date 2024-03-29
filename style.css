@@ -351,7 +351,7 @@ form .btn-2:active {
   transform: translateY(-5px);
   font-size: 20px;
 }
-/* --------CSS Media Query------- */
+/* --------CSS Media Query for small device------- */
 nav .fas {
   display: none;
 }
@@ -418,7 +418,13 @@ nav .fas {
     font-size: 14px;
   }
 }
-
+/* ------CSS media query for medium device------- */
+@media screen and (max-width:996px) {
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+}
 #msg {
   font-size: 14px;
   color: aquamarine;
